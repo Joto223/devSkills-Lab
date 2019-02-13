@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+</head>
+<body>
+    <head>Home</head>
+    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Quis inventore architecto nemo perspiciatis est facere 
+        veritatis minima maxime nostrum. Officia reprehenderit 
+        possimus quasi, nostrum vitae in vero obcaecati atque 
+        autem.</h1>
+
+        <div id="skill-table">
+            <form action="">
+                <input type="text" name="item" placeholder="Add Skill..." >
+                <button type="submit">Add Skill</button>
+            </form>
+            <ul>
+                <%= for(var i = 0; i < skills.length; i++){ %>
+                    <li><%= skills[i].skill %></li>
+              <%  } %>
+            </ul>
+        </div>
+    
+</body>
+</html>
